@@ -1,0 +1,17 @@
+.AppHead {
+  background-color: #636362;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  padding: 3rem;
+}
+
+@media screen and (min-width: 780px) {
+  .AppHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

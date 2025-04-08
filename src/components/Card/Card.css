@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #9b9b9b;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  width: 400px;
+  align-items: center;
+}
+
+.cardTextGreen {
+  color: var(--color-green);
+}
+.cardTextRed {
+  color: var(--color-orange);
+}
