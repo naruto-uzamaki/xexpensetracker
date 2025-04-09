@@ -8,6 +8,7 @@ import Button from "./components/Button/Button";
 import FormButtons from "./components/FormButtons/FormButtons";
 import Card from "./components/Card/Card";
 import Modal from "./components/Modal/Modal";
+import TransactionCard from "./components/TransactionCard/TransactionCard";
 
 function App() {
   const [money, setMoney] = useState({ balance: 5000, expenses: 1200 });

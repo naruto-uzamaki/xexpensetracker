@@ -11,7 +11,7 @@ function FormButtons({ text, toggleModal }) {
         buttonType="submit"
       />
       <Button
-        text="cancel"
+        text="Cancel"
         background="backgroundWhite"
         buttonSize="largeButton"
         clickFunction={toggleModal}

@@ -1,0 +1,36 @@
+.transactionCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.507);
+  padding: 0.5rem 0.25rem;
+}
+
+.innerCard {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.transactionIcon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #d8d9d8;
+}
+
+.cardPrice {
+  color: #f4bb4a;
+  font-weight: 700;
+}
+
+.cardInfo p {
+  color: #9b9b9b;
+  font-size: 1rem;
+}
+
+.cardInfo h5 {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 400;
+}
