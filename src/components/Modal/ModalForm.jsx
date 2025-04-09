@@ -8,7 +8,7 @@ function ModalForm({ toggleModal, formType, existingData }) {
   const [transactionData, setTransactionData] = useContext(TransactionsContext);
 
   const [formData, setFormData] = useState({
-    name: "",
+    title: "",
     price: "",
     date: new Date().toISOString().split("T")[0],
     category: "",
@@ -21,9 +21,9 @@ function ModalForm({ toggleModal, formType, existingData }) {
   }, []);
 
   const updateForm = () => {
-    const { name, date, price, category } = existingData;
+    const { title, date, price, category } = existingData;
     setFormData({
-      name: name,
+      title: title,
       price: price,
       date: date,
       category: category,
@@ -75,11 +75,11 @@ function ModalForm({ toggleModal, formType, existingData }) {
         <input
           required
           className="formInput"
-          value={formData.name}
+          value={formData.title}
           onChange={handleChange}
           placeholder="Title"
           type="text"
-          name="name"
+          name="title"
           autoFocus
         />
 

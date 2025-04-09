@@ -9,7 +9,7 @@ import movieIcon from "../../assets/movie.svg";
 import travelIcon from "../../assets/travel.svg";
 import "./TransactionCard.css";
 
-function TransactionCard({ name, date, price, category, id }) {
+function TransactionCard({ title, date, price, category, id }) {
   const [money, setMoney] = useContext(MoneyContext);
   const [transactionData, setTransactionData] = useContext(TransactionsContext);
 
@@ -37,7 +37,7 @@ function TransactionCard({ name, date, price, category, id }) {
           <img src={selectIcon()} />
         </div>
         <div className="cardInfo">
-          <h5>{name}</h5>
+          <h5>{title}</h5>
           <p>{date}</p>
         </div>
       </div>
@@ -60,7 +60,7 @@ function TransactionCard({ name, date, price, category, id }) {
         <Modal
           toggleModal={toggleModal}
           text="Edit Expense"
-          existingData={{ name, date, price, category, id }}
+          existingData={{ title, date, price, category, id }}
         />
       ) : null}
     </div>

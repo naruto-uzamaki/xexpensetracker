@@ -24,6 +24,7 @@ function Card({ text, value }) {
         background={text === "Expenses" ? "gradientRed" : "gradientGreen"}
         buttonSize="largeButton"
         clickFunction={toggleModal}
+        buttonType="button"
       />
 
       {modalOn ? (

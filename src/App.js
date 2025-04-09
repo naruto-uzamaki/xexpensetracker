@@ -11,8 +11,8 @@ import Modal from "./components/Modal/Modal";
 import TransactionCard from "./components/TransactionCard/TransactionCard";
 
 function App() {
-  const [money, setMoney] = useState({ balance: 5000, expenses: 1200 });
-  const [transactionData, setTransactionData] = useState(dummyData);
+  const [money, setMoney] = useState({ balance: 5000, expenses: 0 });
+  const [transactionData, setTransactionData] = useState([]);
   const initialRender = useRef(true);
 
   useEffect(() => {

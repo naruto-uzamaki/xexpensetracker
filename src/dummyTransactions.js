@@ -1,41 +1,41 @@
 export const dummyData = [
     {
-        name: "Samosa",
+        title: "Samosa",
         date: "2024-03-18",
         category: "food",
         price: 50,
         id: 1711460238574
     },
     {
-        name: "Auto",
+        title: "Auto",
         date: "2024-03-18",
         category: "travel",
         price: 150,
         id: 1711460238579
     },
     {
-        name: "Movie",
+        title: "Movie",
         date: "2024-03-18",
         category: "entertainment",
         price: 300,
         id: 1711460238577
     },
     {
-        name: "Bus",
+        title: "Bus",
         date: "2024-03-18",
         category: "travel",
         price: 100,
         id: 17114602385755
     },
     {
-        name: "Burger",
+        title: "Burger",
         date: "2024-03-18",
         category: "food",
         price: 100,
         id: 17114602385755
     },
     {
-        name: "IPL Match",
+        title: "IPL Match",
         date: "2024-03-18",
         category: "entertainment",
         price: 500,
