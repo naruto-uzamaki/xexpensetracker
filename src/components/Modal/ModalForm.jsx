@@ -38,7 +38,10 @@ function ModalForm({ toggleModal, formType, existingData }) {
     e.preventDefault();
 
     if (formType === "Add Balance") {
-      setMoney({ ...money, balance: money.balance + balanceFormData.income });
+      setMoney({
+        ...money,
+        balance: money.balance + Number(balanceFormData.income),
+      });
     } else if (formType === "Add Expense") {
       let newBalance = money.balance - Number(formData.price);
       let newExpense = money.expenses + Number(formData.price);
