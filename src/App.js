@@ -16,16 +16,23 @@ function App() {
   const initialRender = useRef(true);
 
   useEffect(() => {
-    const data = localStorage.getItem("alldata");
-    if (data) {
-      const { money, transactionData } = JSON.parse(data);
-      setMoney(money);
-      setTransactionData(transactionData);
+    const moneyData = localStorage.getItem("money");
+    const expensesData = localStorage.getItem("expenses");
+    if (moneyData) {
+      setMoney(JSON.parse(moneyData));
+    }
+
+    if (expensesData) {
+      setTransactionData(JSON.parse(expensesData));
     }
   }, []);
 
   useEffect(() => {
-    if (!initialRender.current) localStorage.setItem("alldata", JSON.stringify({ money, transactionData }));
+    if (!initialRender.current) {
+      // localStorage.setItem("alldata", JSON.stringify({ money, transactionData }));
+      localStorage.setItem("money", JSON.stringify(money));
+      localStorage.setItem("expenses", JSON.stringify(transactionData));
+    }
     return (() => {
       initialRender.current = false;
     });
