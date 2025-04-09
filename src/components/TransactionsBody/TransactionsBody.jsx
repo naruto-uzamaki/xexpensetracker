@@ -24,12 +24,12 @@ function TransactionBody() {
     let endidx = 5 * pages.currentPage - 1;
     for (let i = srtidx; i <= endidx; i++) {
       if (i >= transactionData.length) break;
-      const { name, date, price, category, id } = transactionData[i];
+      const { title, date, price, category, id } = transactionData[i];
       renderedList.push(
         <TransactionCard
           key={`${key++}`}
           id={id}
-          name={name}
+          title={title}
           price={price}
           category={category}
           date={date}
