@@ -1,6 +1,6 @@
 import "./Navbar.css";
 function Navbar() {
-  return <nav className="nav">Expense Tracker</nav>;
+  return <h1>Expense Tracker</h1>;
 }
 
 export default Navbar;
